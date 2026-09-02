@@ -20,6 +20,7 @@ app.get(`/api/chain`, (req: Request, res: Response) => {
 
 // POST API/Transaction- lägg till en ny transaktion
 app.post(`/api/transaction`, (req: Request, res: Response) => {
+    try {
     const { serialNumber,fromAddress, toAddress } = req.body as Transaction;
 
     if (!serialNumber || !fromAddress || !toAddress) {
@@ -57,7 +58,7 @@ app.post(`/api/mine`, (req: Request, res: Response) => {
     //GET API/verify/id
 app.get(`/api/verify/:id`, (req: Request, res: Response) => {
     const serialNumber = req.params.id;
-    const history = highEndBlockchain.getProductHistory(serialNumber);
+    const history = highEndBlockchain.getProductHistory(serialNumber as string);
 
     if (history.length === 0) {
         return res.status(404).json({ error: 'Ingen produkt med det serienumret hittades.' });
