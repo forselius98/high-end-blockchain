@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/server.js",
-    "dev": "nodemon --watch src --ext ts --exec tsx src/server.ts"
+   "dev": "tsx watch src/server.ts"
   },
   "repository": {
     "type": "git",

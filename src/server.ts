@@ -1,6 +1,9 @@
-import express, { Request, Response } from 'express';
+import express from 'express';
+import type, { Request, Response } from 'express';
 import { Blockchain } from './engine/Blockchain.js';
 import { Transaction } from './types/blockchain.js';
+
+console.log("Servern startar...");
 
 const app = express();
 const port = 3000;
