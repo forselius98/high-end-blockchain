@@ -50,3 +50,17 @@ src/
   "toAddress": "0xCollectorA"
 }
 ```
+
+## Inspektor i Chrome
+Transaction
+<img width="629" height="438" alt="image" src="https://github.com/user-attachments/assets/3b465248-ca38-4a06-93c3-43e58639644c" />
+
+
+Mine:
+<img width="629" height="438" alt="image" src="https://github.com/user-attachments/assets/34f90886-e6c5-455d-9831-5f6af0ed1a88" />
+
+Rolex:
+<img width="629" height="438" alt="image" src="https://github.com/user-attachments/assets/5cade235-46ed-447c-a5ef-9b33ee2b029d" />
+
+
+
